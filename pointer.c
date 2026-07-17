@@ -15,5 +15,7 @@ int main(){
     printf("%p\n",ptr); // points variable address prints it
     printf("%p\n",*&ptr); // (&ptr) is ptr address ---> (*&ptr)---> dereference the address of variable
     printf("%d\n",**&ptr); // (&ptr) is ptr address ---> (*&ptr)---> dereference the address of variable ---> (**&ptr) dereference 'a' to get 1
+    //size of pointer
+    printf("%zu\n", sizeof(ptr));// (%zu) to get size (if PC is 64Bit)--->size is 8 (if PC is 32Bit)--->size is 4
     return 0;
 }
