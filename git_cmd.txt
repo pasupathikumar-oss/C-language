@@ -1,0 +1,29 @@
+// To create a new repo
+     git init
+// To check the status of the repo 
+     git status
+// To stage the files for commit
+     git add .
+// To commit the change (-m is flag for 'message')
+     git commit -m "Initial commit"
+
+// GIT ADD COMMANDS:
+ ___________________________________________________________________________________________________________________
+| Command                       | What it does                                                                      |
+| ----------------------------- | --------------------------------------------------------------------------------- |
+| `git add file.txt`            | Stage a specific file.                                                            |
+| `git add file1.txt file2.txt` | Stage multiple files.                                                             |
+| `git add .`                   | Stage all new and modified files in the current directory and its subdirectories. |
+| `git add -A`                  | Stage all changes (new, modified, and deleted files) across the repository.       |
+| `git add *.js`                | Stage all `.js` files in the current directory.                                   |
+|___________________________________________________________________________________________________________________|
+
+
+// To push repo to github or gitlab 
+     git remote add origin <repository-url>
+
+// To push  (-u is to set up-stram once done concicutive push can be done with simple 'git push' )
+     git push -u origin main   
+
+// To clone a repo 
+     git clone <repository-url>
