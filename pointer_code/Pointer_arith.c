@@ -57,5 +57,25 @@ int main(){
     printf(" ptr1 = %p, ptr2 = %p\n", ptr3, ptr4);
     x = ptr3 - ptr4;
     printf("Subtraction of ptr1 & ptr2 is %d\n", x);
+
+    // COMPARE OPERATOR (>, >=, <, <=, ==, !=)
+
+    int aa = 10, bb = 20;
+    int arr[5];
+    int *p = &aa;
+    int *q = &aa;
+    int *r = &bb;
+    int *pp = &arr[1];
+    int *qq = &arr[4];
+
+
+    printf("%d\n", p == q);   // 1 (true)
+    printf("%d\n", p != r);   // 1 (true)
+    printf("%d\n", pp < qq);   // true
+    printf("%d\n", pp <= qq);  // true
+    printf("%d\n", qq > pp);   // true
+    printf("%d\n", qq >= pp);  // true
+
+
     return 0;
 }
