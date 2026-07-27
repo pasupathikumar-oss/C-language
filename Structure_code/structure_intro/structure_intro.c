@@ -93,5 +93,10 @@ struct parent p = { 25, 195, 'A' };
     printf("p.b.x = %d\n", p.b.x);
     printf("p.b.c = %c", p.b.c);
 
+
+// union
+
+// enum
+
 return 0;
 }

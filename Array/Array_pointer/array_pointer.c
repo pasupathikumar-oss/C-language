@@ -1,0 +1,1 @@
+// also cover array with DMA
