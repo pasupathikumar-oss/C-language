@@ -37,6 +37,23 @@ struct parent {
 };
 
 
+//A union is a user-defined data type that allows storing different data types in the same memory location. 
+//At any given time, only one member can hold a valid value because all members share the same memory.
+
+union std {
+    int rollNo;
+    float height;
+    char firstLetter;
+};
+
+
+//An enumeration (enum) is a user-defined data type that assigns meaningful names to a set of integer constants.
+//By default, the first enum constant has the value 0, and each subsequent constant is incremented by 1.
+
+enum direction {
+    EAST, NORTH, WEST, SOUTH
+};
+
 
 // Function to increment values  (b is a pointer to A)
 void increment(struct A a, struct A* b) {
@@ -95,8 +112,19 @@ struct parent p = { 25, 195, 'A' };
 
 
 // union
+union std data;
+data.rollNo = 21;
+printf("%d\n", data.rollNo);
+data.height = 5.2;
+printf("%.2f\n", data.height);
+data.firstLetter = 'N';
+printf("%c", data.firstLetter);
 
 // enum
-
+enum direction dir = NORTH;
+printf("%d\n", dir);
+// This is valid too
+dir = 3;
+printf("%d", dir);
 return 0;
 }
