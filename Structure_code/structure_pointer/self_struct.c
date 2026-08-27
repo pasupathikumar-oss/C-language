@@ -23,6 +23,7 @@ int main(){
     node2.data1 = 20;
     node2.data2 = 'B';
     node.link = &node2; //linking node to node2
+    node2.link = NULL; //node2 is the last node in the linked list
     printf("Data1 of linked node: %d\n", node.link->data1); // NOTE: using '->' operator to access members of the linked node
     printf("Data2 of linked node: %c\n", node.link->data2); 
     return 0;
